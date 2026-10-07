@@ -33,6 +33,8 @@ DAILY_MINUTE = int(os.getenv("DAILY_MINUTE", "0"))
 logging.basicConfig(
     format="%(asctime)s %(levelname)s %(name)s: %(message)s", level=logging.INFO
 )
+# httpx logs request URLs, which contain the bot token
+logging.getLogger("httpx").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
 WELCOME_TEXT = (

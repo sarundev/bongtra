@@ -27,6 +27,8 @@ if not BOT_TOKEN:
 logging.basicConfig(
     format="%(asctime)s %(levelname)s %(name)s: %(message)s", level=logging.INFO
 )
+# httpx logs request URLs, which contain the bot token
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
 WELCOME_TEXT = (
     "🧠 សូមស្វាគមន៍មកកាន់ កម្រងសំណួរកីឡា!\n\n"

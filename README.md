@@ -37,3 +37,22 @@ Each bot needs its own token from @BotFather (`QUIZ_BOT_TOKEN`, `FACT_BOT_TOKEN`
 .venv/bin/python sport_fact_bot/bot.py
 .venv/bin/python sport_workout_bot/bot.py
 ```
+
+## Sportfact bot (button menu)
+
+`sportfact_bot/` — welcome screen with buttons **🧠 ចំណេះដឹងកីឡា** / **🔄 ចំណេះដឹងមួយទៀត**,
+plus **❓ សាកល្បងចំណេះដឹង** (quiz) and **🏠 ទំព័រដើម**. Reuses `sport_fact_bot/facts.py`
+and `sport_quiz_bot/questions.py`. Token: `SPORTFACT_BOT_TOKEN`.
+
+```bash
+.venv/bin/python sportfact_bot/bot.py
+```
+
+## SportStar bot (athletes + guessing game)
+
+`sportstar_bot/` — browse famous athletes by sport (⚽ 🏀 🥊 🏅) and play
+**🎯 ទាយកីឡាករ**: guess the athlete from hints (3 / 2 / 1 points). Token: `SPORTSTAR_BOT_TOKEN`.
+
+```bash
+.venv/bin/python sportstar_bot/bot.py
+```
